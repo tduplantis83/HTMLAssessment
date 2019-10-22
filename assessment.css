@@ -1,0 +1,80 @@
+/* USER STORY 1: headers in blue */
+.subjectHeader {
+  color: blue;
+  font-family: sans-serif;
+}
+
+/* USER STORY 2: table headers in bold blue */
+#scoreBoard thead{
+  font-style: bold;
+  color: blue;
+}
+
+/* USER STORY 2: align content center, give rows and columns borders */
+#scoreBoard table, th, tr, td {
+  border: 1px solid black;
+  vertical-align: middle;
+  text-align: center;
+}
+
+/* USER STORY 3: give lists square bullets */
+#teamRoster ul{
+  list-style-type: square;
+}
+
+/* USER STORY 4: change hover appearance for links */
+#teamRoster a:hover{
+  background-color: orange;
+  color: blue;
+  text-decoration: none;
+}
+
+/* USER STORY 5; set gray background and white text for blockquoted text */
+blockquote {
+  background-color: darkgray;
+  color: white;
+}
+
+/* USER STORY 6: make list background image broncos logo and lighten */
+#teamRoster > li:first-child {
+  /* STRETCH GOAL - MAKE BACKGROUND IMAGE LESS INTENSE */
+  background:linear-gradient(rgba(255,255,255,0.75), rgba(255,255,255,0.75)), url(https://upload.wikimedia.org/wikipedia/en/4/44/Denver_Broncos_logo.svg);
+  background-repeat: no-repeat;
+  background-size:contain;
+}
+
+/* USER STORY 6: make list background image bears logo and lighten */
+#teamRoster > li:last-child {
+  /* STRETCH GOAL - MAKE BACKGROUND IMAGE LESS INTENSE */
+  background:linear-gradient(rgba(255,255,255,0.75), rgba(255,255,255,0.75)), url(https://upload.wikimedia.org/wikipedia/commons/5/5c/Chicago_Bears_logo.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+/* USER STORY 6: hide broncos/bears logo */
+#teamRoster > li > img {
+  visibility: hidden;
+}
+
+/* USER STORY 7: remove bullets from checkboxes */
+#checkbox-grid > li {
+  list-style-type: none;
+}
+
+
+
+/******************************* STRETCH GOALS *****************************/
+/* make first QB player bold */
+#teamRoster ol > li:first-child {
+  font-weight: bold;
+}
+
+/* give table body rows alternating shaing */
+#scoreBoard tbody tr:nth-child(odd) {
+  background-color: lightgray;
+}
+
+/* give table foot rows alternating shaing */
+#scoreBoard tfoot tr:nth-child(odd) {
+  background-color: lightgray;
+}
